@@ -1,90 +1,44 @@
-**Qualys-Flow**
-
-
+### **Qualys-Flow**
 
 ---
-
 This is a Qualys automation build on Streamlit web framework. It solves the latency time that comes with Qualys UI.
 
-
+---
+**_Requirements_**
 
 ---
-
-\*\*\_Requirements\_\*\*
-
-
-
----
-
-\- Python3
-
-\- Python `pip3`
-
-\- Streamlit
-
-\- Steamlit\_Option\_Menu
-
-
+- Python3
+- Python `pip3`
+- Streamlit
+- Steamlit_Option_Menu
 
 ---
-
-\*\*\_Installation\_\*\*
-
-
+**_Installation_**
 
 ---
+- cd to Qualys-Flow directory
+- install requirements : `pip install -r requirements.txt`
+- run: `streamlit run app.py`
+- you will be able to access it on your `http://localhost:8501`
 
-\- cd to Qualys-Flow directory
-
-\- install requirements : `pip install -r requirements.txt`
-
-\- run: `streamlit run app.py`
-
-\- you will be able to access it on your `http://localhost:8501`
-
-
-
-\*\*\_OR\_\*\*
-
+**_OR_**
 Build docker image
 
+---
+- cd to Qualys-Flow directory
+- build docker image: `sudo docker build -t qualys-flow .`
+- initiate container: `sudo docker run -p 8501:8501 -v $(pwd)/downloads:/app/downloads qualys-flow`
 
+
+**_Feature_**
 
 ---
+- Generate and Download scan reports
+- Download already generated reports
+- Delete reports to save spaces, as Qualys provide limited user space
 
-\- cd to Qualys-Flow directory
-
-\- build docker image: `sudo docker build -t qualys-flow .`
-
-\- initiate container: `sudo docker run -p 8501:8501 -v $(pwd)/downloads:/app/downloads qualys-flow`
-
-
-
-
-
-\*\*\_Feature\_\*\*
-
-
+**_TODO_**
 
 ---
-
-\- Generate and Download scan reports
-
-\- Download already generated reports
-
-\- Delete reports to save spaces, as Qualys provide limited user space
-
-
-
-\*\*\_TODO\_\*\*
-
-
-
----
-
-\- Add support for launching scans for VM
-
-\- Add web application support and all its functionality
-
-
-
+- Add support for launching scans for VM
+- Add web application support and all its functionality
