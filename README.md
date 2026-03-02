@@ -37,8 +37,15 @@ Build docker image
 - Download already generated reports
 - Delete reports to save spaces, as Qualys provide limited user space
 
+*_Configuration_**
+
+---
+- Obtain the template ID from the qualys
+- Make necessary in the `Qualys-Flow/qualys/reports.py` and `Qualys-Flow/qualys/config.py`
+
 **_TODO_**
 
 ---
 - Add support for launching scans for VM
 - Add web application support and all its functionality
+
